@@ -125,7 +125,11 @@ const Menu = () => {
             {i.title}
           </span>
           {i.items.map((item) => (
-            <Link key={item.label} href={item.href} className="">
+            <Link
+              key={item.label}
+              href={item.href}
+              className="flex items-center justify-center lg:justify-start gap-4 text-gray-500 py-2"
+            >
               <Image src={item.icon} alt={item.label} width={20} height={20} />
               <span className="hidden lg:block">{item.label}</span>
             </Link>
