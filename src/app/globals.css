@@ -1,1 +1,31 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+
+@theme {
+  --color-cSky: #c3ebfa;
+  --color-cSkyLight: #edf0fd;
+  --color-cPurple: #cfceff;
+  --color-cPurpleLight: #f1f0ff;
+  --color-cYellow: #fae27c;
+  --color-cYellowLight: #fefce8;
+}
+
+/* @layer utilities {
+  .bg-Csky {
+    background-color: var(--color-cSky);
+  }
+  .bg-CskyLight {
+    background-color: var(--color-cSkyLight);
+  }
+  .bg-Cpurple {
+    background-color: var(--color-cPurple);
+  }
+  .bg-CpurpleLight {
+    background-color: var(--color-cPurpleLight);
+  }
+  .bg-Cyellow {
+    background-color: var(--color-cYellow);
+  }
+  .bg-CyellowLight {
+    background-color: var(--color-cYellowLight);
+  }
+} */
