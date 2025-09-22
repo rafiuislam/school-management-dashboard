@@ -9,7 +9,7 @@ const UserCard = ({ type }) => {
         </span>
         <Image
           src="/more.png"
-          alt="avatar icon"
+          alt="more icon"
           width={20}
           height={20}
           className="rounded-full"
