@@ -14,7 +14,7 @@ const events = [
   {
     id: 1,
     title: "Loren ipsum dolor",
-    tine: "12:00 PM — 2:00 PM",
+    time: "12:00 PM — 2:00 PM",
     description: "Loren ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
