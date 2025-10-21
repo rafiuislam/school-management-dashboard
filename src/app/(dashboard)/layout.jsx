@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import Menu from "@/app/components/Menu";
-import Navbar from "@/app/components/Navbar";
+import Menu from "../components/Menu";
+import Navbar from "../components/Navbar";
 
 export default function DashboardLayout({ children }) {
   return (
@@ -13,7 +13,7 @@ export default function DashboardLayout({ children }) {
           className="flex items-center justify-center lg:justify-start gap-2"
         >
           <Image src="/logo.png" alt="logo-png" width={32} height={32} />
-          <span className="hidden lg:block">School Management</span>
+          <span className="hidden lg:block font-bold">School Management</span>
         </Link>
         <Menu />
       </div>
