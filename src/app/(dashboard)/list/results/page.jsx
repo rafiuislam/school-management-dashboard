@@ -4,6 +4,7 @@ import Pagination from "../../../components/Pagination";
 import Table from "../../../components/Table";
 import { role, resultsData } from "../../../lib/data";
 import Link from "next/link";
+import FormModal from "../../../components/FormModal";
 
 const columns = [
   {
@@ -58,16 +59,11 @@ const ResultListPage = () => {
 
       <td>
         <div className="flex items-center gap-2">
-          <Link href={`/list/lessons/${item.id}`}>
-            <button className="w-7 h-7 flex items-center justify-center rounded-full bg-cSky">
-              <Image src="/edit.png" alt="" width={16} height={16} />
-            </button>
-          </Link>
           {role === "admin" && (
-            <button className="w-7 h-7 flex items-center justify-center rounded-full bg-cPurple">
-              <Image src="/delete.png" alt="" width={16} height={16} />
-            </button>
-            // <FormModal table="teacher" type="delete" id={item.id} />
+            <>
+              <FormModal table="result" type="update" id={item} />
+              <FormModal table="result" type="delete" id={item.id} />
+            </>
           )}
         </div>
       </td>
@@ -88,9 +84,10 @@ const ResultListPage = () => {
               <Image src="/sort.png" alt="" width={16} height={16} />
             </button>
             {role === "admin" && (
-              <button className="w-8 h-8 flex items-center justify-center rounded-full bg-cYellow">
-                <Image src="/plus.png" alt="" width={16} height={16} />
-              </button>
+              // <button className="w-8 h-8 flex items-center justify-center rounded-full bg-cYellow">
+              //   <Image src="/plus.png" alt="" width={16} height={16} />
+              // </button>
+              <FormModal table="result" type="create" />
             )}
           </div>
         </div>
